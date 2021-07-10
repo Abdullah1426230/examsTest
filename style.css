@@ -191,14 +191,14 @@ h1 {
     position: relative;
 }
 
-.correct::before {
+/* .correct::before {
     content: 'الإجابة الصحيحة';
     font-size: 20px;
     font-weight: 900;
     color: #fff;
     position: absolute;
     left: 15px;
-}
+} */
 
 .false {
     padding: 10px 10px 0;
@@ -217,14 +217,14 @@ p {
     color: #fff;
 }
 
-.false::before {
+/* .false::before {
     content: 'خاطئ';
     font-size: 20px;
     font-weight: 900;
     color: #fff;
     position: absolute;
     left: 15px;
-}
+} */
 
 .btn {
     display: flex;
