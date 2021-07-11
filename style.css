@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.container {
+    margin: auto;
+    display: block;
+    max-width: 1170px;
+    padding: 4px 0;
+    background-color: #1c5c58;
+}
+
+button {
+    cursor: pointer;
+}
+
+hr {
+    background-color: #000 !important;
+}
+
+body {
+    background-image: url('bg.jpg');
+}
+
+.q {
+    margin: 14px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #bbb;
+}
+
+#color {
+    border: 0;
+    display: block;
+    margin: 15px auto;
+    width: 80px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.bgcolor h2 {
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px;
+    background-image: radial-gradient( #aaa, #000);
+}
+
+
+/* input[type="radio"] {
+    width: 50px;
+} */
+
+label {
+    font-size: 24px;
+}
+
+.correct,
+.false {
+    padding: 15px;
+}
+
+button[type="submit"] {
+    padding: 15px;
+    width: 180px;
+    font-size: 24px;
+    background-color: #080;
+    border: 0;
+    margin: 15px;
+    border-radius: 6px;
+    transition: .4s;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+button[type="reset"]:hover {
+    background-color: black;
+}
+
+button[type="reset"] {
+    padding: 15px;
+    width: 180px;
+    font-size: 24px;
+    background-color: #f00;
+    border: 0;
+    margin: 15px;
+    border-radius: 6px;
+    transition: .4s;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: black;
+}
+
+.q h1 {
+    padding: 15px;
+    /* text-align: justify; */
+    color: white;
+    background-color: rgb(16, 12, 68);
+}
+
+
+/* The container */
+
+.containere {
+    display: block;
+    position: relative;
+    padding-right: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.containere input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.containere:hover input~.checkmark {
+    background-color: #aaa;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.containere input:checked~.checkmark {
+    background-color: #000;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.containere input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.containere .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.correct {
+    padding: 10px 10px 0;
+    background-color: rgb(78, 170, 78);
+    border: 2px solid darkgreen;
+    margin: 10px 0px;
+    width: 100%;
+    /* opacity: 0; */
+    /* display: none; */
+    border-radius: 5px;
+    position: relative;
+}
+
+
+/* .correct::before {
+    content: 'الإجابة الصحيحة';
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+} */
+
+.false {
+    padding: 10px 10px 0;
+    background-color: rgb(173, 78, 78);
+    border: 2px solid rgb(78, 1, 1);
+    margin: 10px 0px;
+    width: 100%;
+    /* opacity: 0; */
+    /* display: none; */
+    border-radius: 5px;
+    position: relative;
+}
+
+p {
+    font-weight: 900;
+    color: #fff;
+}
+
+
+/* 
+.false::before {
+    content: 'خاطئ';
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+} */
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body>header {
+    background-color: #042414;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999;
+    font-weight: bold;
+}
+
+body>header span {
+    font-size: 30px;
+    user-select: none;
+    cursor: pointer;
+}
+
+aside {
+    width: 240px;
+    height: 100vh;
+    /* display: none; */
+    position: fixed;
+    right: -300px;
+    transition: .4s;
+    z-index: 99999999999995555;
+    background-color: #681a1a;
+}
+
+aside li {
+    padding: 14px;
+    background-color: darkgreen;
+    color: white;
+    transition: .4s;
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+aside li:hover {
+    background-color: wheat;
+    color: #681a1a;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+}
+
+aside span {
+    /* display: block; */
+    cursor: pointer;
+    background-color: red;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: #fff;
+    /* height: 50px; */
+}
+
+main h1 {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #1c5c58;
+}
+
+main .container {
+    display: flex;
+    background-color: transparent;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+main .container article {
+    min-width: 280px;
+    overflow: hidden;
+    border-radius: 10px !important;
+    margin: 12px auto;
+    max-width: 375px !important;
+    width: 98%;
+}
+
+main .container article .arti-hdr {
+    background-color: #333;
+    padding: 12px;
+}
+
+main .container article .arti-hdr img {
+    display: block;
+    margin: 15px auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+main .container article .arti-hdr h2,
+main .container article .arti-hdr h3 {
+    text-align: center;
+    color: white;
+}
+
+main .container article .btns {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #666;
+}
+
+main .container article .btns span {
+    padding: 0px 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main .container article .btns span:hover {
+    color: red;
+}
+
+main .container article .btns span.active {
+    color: red;
+}
+
+a button {
+    width: 85%;
+    padding: 12px 0;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(29, 113, 116);
+}
+
+a button:hover {
+    background-color: #dd7841;
+}
