@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>تكبيرات العيد</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>منصة اختبارات </h1>
+        <span onclick="openSide()">&#9776;</span>
+    </header>
+    <!-- Side -->
+    <aside id="side">
+        <div style="position: relative;">
+            <span onclick="closeSide()">&times;</span>
+            <a href="index.html">
+                <li>الرئيسية</li>
+            </a>
+            <a href="تكبيرات العيد.html">
+                <li>نكبيرات العيد</li>
+            </a>
+        </div>
+    </aside><br><br><br><br>
+    <!-- Main -->
+    <main>
+        <h1>تكبيرات العيد</h1>
+        <div class="container">
+            <article>
+                <header class="arti-hdr">
+                    <h2>تكبيرات العيد</h2>
+                    <img src="ali.jpg" alt="">
+                    <h3>علي بن أحمد ملا</h3>
+                    <audio src="" id="audio1"></audio>
+
+                </header>
+                <div class="btns">
+                    <span onclick="openAudio1()"><i class="fas fa-play"></i></span>
+                    <span onclick="pauseAudio1()"><i class="fas fa-pause"></i></span>
+                    <span onclick="closeAudio1()"><i class="fas fa-stop"></i></span>
+                </div>
+            </article>
+            <article>
+                <header class="arti-hdr">
+                    <h2>تكبيرات العيد</h2>
+                    <img src="fa.jpg" alt="">
+                    <h3>فاروق بن عبدالرحمن حضراوي</h3>
+                    <audio src="" id="audio2"></audio>
+                </header>
+                <div class="btns">
+                    <span onclick="openAudio2()"><i class="fas fa-play"></i></span>
+                    <span onclick="pauseAudio2()"><i class="fas fa-pause"></i></span>
+                    <span onclick="closeAudio2()"><i class="fas fa-stop"></i></span>
+                </div>
+            </article>
+            <article>
+                <header class="arti-hdr">
+                    <h2>تكبيرات العيد</h2>
+                    <img src="has.jpg" alt="">
+                    <h3>هاشم بن محمد السقاف</h3>
+                    <audio src="" id="audio3"></audio>
+
+                </header>
+                <div class="btns">
+                    <span onclick="openAudio3()"><i class="fas fa-play"></i></span>
+                    <span onclick="pauseAudio3()"><i class="fas fa-pause"></i></span>
+                    <span onclick="closeAudio3()"><i class="fas fa-stop"></i></span>
+                </div>
+            </article>
+        </div>
+    </main>
+    <!-- JS -->
+    <script src="js.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

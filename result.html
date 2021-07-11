@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;700&display=swap" rel="stylesheet">
+    <title>أسئلة دينية | الإجابات</title>
+    <style>
+        .checkmark,
+        input[type="radio"] {
+            display: none;
+            cursor: default !important;
+        }
+        
+        .correct {
+            background-color: darkgreen !important;
+            border-color: white;
+            color: wheat;
+            padding: 10px 15px;
+            font-weight: 900;
+        }
+        
+        .false {
+            background-color: darkred !important;
+            border-color: white;
+            color: wheat;
+            padding: 10px 15px;
+            font-weight: 900;
+        }
+        
+        span {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>منصة اختبارات </h1>
+        <span onclick="openSide()">&#9776;</span>
+    </header>
+    <!-- Side -->
+    <aside id="side">
+        <div style="position: relative;">
+            <span onclick="closeSide()">&times;</span>
+            <a href="index.html">
+                <li>الرئيسية</li>
+            </a>
+            <a href="تكبيرات العيد.html">
+                <li>نكبيرات العيد</li>
+            </a>
+        </div>
+    </aside><br><br><br><br>
+    <div id="con" class="container">
+        <div style="padding-bottom: 15px; color:white; margin:15px auto; width:calc(100% - 30px)" class="correct">
+            <h2>الإجابة الصحيحة</h2>
+        </div>
+
+        <div style="padding-bottom: 15px; color:white; margin:15px auto; width:calc(100% - 30px)" class="false">
+            <h2>الإجابة الخاطئة</h2>
+        </div>
+        <div class="q">
+            <h1>يوم عرفة يوافق ...</h1>
+            <div style="padding: 15px;" class="answers">
+                <div class="false">
+
+                    <span>السابع من ذي الحجة
+                      </span>
+
+                </div>
+                <div class="correct">
+                    <span>التاسع من ذي الحجة
+                        </span>
+                </div>
+                <div class="false">
+
+                    <span>الحادي عشر من ذي الحجة</span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="q">
+            <h1> يجب عدم حلاقة شعر الجسم في العشر للمضحي وغير المضحي</h1>
+            <div style="padding: 15px;" class="answers">
+                <div class="false">
+
+                    <span>صح</span>
+                </div>
+                <div class="correct">
+
+                    <span>خطأ</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="q">
+            <h1>أيام عشر ذي الحجة أفضل أيام السنة</h1>
+            <div style="padding: 15px;" class="answers">
+                <div class="correct">
+
+                    <span>صح</span>
+
+                </div>
+                <div class="false">
+
+                    <span>خطأ</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="q">
+            <h1>أيام عشر ذي الحجة أفضل من أيام رمضان</h1>
+            <div style="padding: 15px;" class="answers">
+                <div class="false">
+
+                    <span>صح</span>
+
+                </div>
+                <div class="correct">
+
+                    <span>خطأ</span>
+
+                </div>
+            </div>
+        </div>
+        <hr size="6" color="#000">
+        <div class="btn">
+            <a href="index.html">
+                <button id="reset" type="reset">إعادة الاختبار</button>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="js.js"></script>
+</body>
+
+</html>
